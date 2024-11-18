@@ -43,10 +43,10 @@
         <label for="type">Тип учетной записи</label>
         <select name="type" class="block mt-1 w-full">
             <option value="1" @selected(old('type') == '')>
-                Ученик
+                Педагог
             </option>
             <option value="2" @selected(old('type') == '')>
-                Педагог
+                Родитель
             </option>
         </select>
 
