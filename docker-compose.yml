@@ -1,6 +1,6 @@
 services:
   php-fpm:
-    container_name: php
+    container_name: php-help
     build:
       context: docker/php-fpm
     volumes:
@@ -13,7 +13,7 @@ services:
       - empty.project.network
 
   nginx:
-    container_name: nginx
+    container_name: nginx-help
     build:
       context: docker/nginx
     volumes:
@@ -26,7 +26,7 @@ services:
       - empty.project.network
 
   postgres:
-    container_name: postgres
+    container_name: postgres-help
     image: postgres
     restart: always
     networks:
