@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/dashboard', function () {
+    return redirect('/');
+});
+
 Route::get('/', function () {
     return view('home');
 })->middleware(['auth', 'verified'])->name('/');
