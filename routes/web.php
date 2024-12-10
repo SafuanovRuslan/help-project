@@ -23,11 +23,19 @@ Route::get('/', function () {
 })->middleware(['auth', 'verified'])->name('/');
 
 Route::get('/methodical', function () {
-    return view('home');
+    return view('metodical');
 })->middleware(['auth', 'verified'])->name('methodical');
 
+Route::get('/obr', function () {
+    return view('obr');
+})->middleware(['auth', 'verified'])->name('obr');
+
+Route::get('/edu', function () {
+    return view('edu');
+})->middleware(['auth', 'verified'])->name('edu');
+
 Route::get('/specialists', function () {
-    return view('home');
+    return view('specialists');
 })->middleware(['auth', 'verified'])->name('specialists');
 
 Route::get('/forum', function () {
@@ -35,11 +43,11 @@ Route::get('/forum', function () {
 })->middleware(['auth', 'verified'])->name('forum');
 
 Route::get('/docs', function () {
-    return view('home');
+    return view('docs');
 })->middleware(['auth', 'verified'])->name('docs');
 
 Route::get('/news', function () {
-    return view('home');
+    return view('news');
 })->middleware(['auth', 'verified'])->name('news');
 
 Route::get('/info', function () {

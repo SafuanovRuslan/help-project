@@ -8,7 +8,7 @@
                     <x-nav-link :href="route('/')" :active="request()->routeIs('/')">
                         {{ __('Главная') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('methodical')" :active="request()->routeIs('methodical')">
+                    <x-nav-link :href="route('methodical')" :active="request()->routeIs('methodical', 'obr', 'edu')">
                         {{ __('Методическая копилка') }}
                     </x-nav-link>
                     <x-nav-link :href="route('specialists')" :active="request()->routeIs('specialists')">
