@@ -13,14 +13,16 @@
                     </div>
                 </div>
 
-                <div class="p-6 text-gray-900">
-                    <div style="background-color: white; border-radius: 20px; padding: 40px 20px; position: relative;">
-                        <ol style="list-style: auto; margin-left: 20px;">
-                            <?php $users = \App\Models\User::query()->where('type', '=', 1)->get(); ?>
-                            <?php foreach ($users as $user): ?>
-                                <li><?= $user->name ?></li>
-                            <?php endforeach; ?>
-                        </ol>
+                <div class="p-6 text-gray-900" style="padding-left: 0; padding-right: 0">
+                    <div>
+                        <?php $users = \App\Models\User::query()->where('type', '=', 1)->get(); ?>
+                        <?php foreach ($users as $user): ?>
+                            <div style="background-color: white; border-radius: 20px; padding: 40px 20px; position: relative; margin-bottom: 20px">
+                                <h3 style="font-size: 1.2em; margin-bottom: 10px;"><?= $user->name ?></h3>
+                                <p style="margin-bottom: 10px;">Email: <i><?= $user->email ?></i></p>
+                                <p style="color: #777777">Специалист со стажем</p>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>

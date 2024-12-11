@@ -39,7 +39,7 @@ Route::get('/specialists', function () {
 })->middleware(['auth', 'verified'])->name('specialists');
 
 Route::get('/forum', function () {
-    return view('home');
+    return view('forum');
 })->middleware(['auth', 'verified'])->name('forum');
 
 Route::get('/docs', function () {
@@ -51,7 +51,7 @@ Route::get('/news', function () {
 })->middleware(['auth', 'verified'])->name('news');
 
 Route::get('/info', function () {
-    return view('home');
+    return view('info');
 })->middleware(['auth', 'verified'])->name('info');
 
 Route::middleware('auth')->group(function () {

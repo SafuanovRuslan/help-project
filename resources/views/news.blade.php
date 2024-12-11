@@ -15,17 +15,56 @@
                     </div>
                 </div>
 
-                <div class="p-6 text-gray-900">
-                    <h2 style="margin: 30px 0 20px; font-size: 2em; font-weight: 900; text-align: center">Разделы с полезной и актуальной информацией</h2>
-                    <div style="display: grid; grid-template-columns: 450px 450px; gap: 20px; justify-content: center">
-                        <a class="part-hrefs" href="/obr" style="color:black; transition: .5s; background-color: white; border-radius: 20px; padding: 40px 20px; position: relative">
-                            <img src="/images/icon-obr.png" style="position: absolute; top: 30px; left: 20px; width: 100px">
-                            <h3 style="margin: 20px 0 15px; font-size: 1.5em; font-weight: 900; text-align: center">Образование</h3>
-                        </a>
-                        <a class="part-hrefs" href="/edu" style="color:black; transition: .5s; background-color: white; border-radius: 20px; padding: 40px 20px; position: relative;">
-                            <img src="/images/icon-vosp.png" style="position: absolute; top: 30px; left: 20px; width: 100px">
-                            <h3 style="margin: 20px 0 15px; font-size: 1.5em; font-weight: 900; text-align: center">Воспитание</h3>
-                        </a>
+                <div class="p-6 text-gray-900" style="padding-left: 0; padding-right: 0">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <h2 style="margin: 30px 0 20px; font-size: 1.5em; font-weight: 900; text-align: center; height: 58px; line-height: 58px">Городские информационные порталы</h2>
+                            <a href="https://vk.com/pitertop1" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">Петербург с огоньком | Новости и афиша Питера</h3>
+                            </a>
+                            <a href="https://vk.com/zavtra_v_pitere" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">Завтра в Питере | Санкт-Петербург</h3>
+                            </a>
+                            <a href="https://vk.com/petersburg_public" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">Санкт-Петербург</h3>
+                            </a>
+                            <a href="https://vk.com/dpru" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">Деловой Петербург — свежие новости и видео</h3>
+                            </a>
+                            <a href="https://vk.com/rus_crime_petersburg" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px">Новости Санкт-Петербурга сегодня, происшествия</h3>
+                            </a>
+                        </div>
+                        <div>
+                            <h2 style="margin: 30px 0 20px; font-size: 1.5em; font-weight: 900; text-align: center; height: 58px">Информационные порталы ВОГ<br>(Всероссийское Общество Глухих):</h2>
+                            <a href="https://vk.com/voginfo" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">Всероссийское Общество Глухих</h3>
+                            </a>
+                            <a href="https://vk.com/spbvog" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">Санкт-Петербургское общество глухих</h3>
+                            </a>
+                            <a href="https://spbrovog.timepad.ru/events/" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">События. СПб РО ОООИ ВОГ</h3>
+                            </a>
+                            <a href="https://vk.com/petervog" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">СПб (ЛО) РО ОООИ ВОГ</h3>
+                            </a>
+                            <a href="https://t.me/spbvog" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">СПБВОГ.ру</h3>
+                            </a>
+                            <a href="https://t.me/gluxixnet" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">Новости Глухих.нет</h3>
+                            </a>
+                            <a href="https://t.me/kdm_vog" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">Молодёжь ВОГ</h3>
+                            </a>
+                            <a href="https://t.me/culturaspbvog" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">КУЛЬТУРА и ДОСУГ (СПБВОГ.ру)</h3>
+                            </a>
+                            <a href="https://t.me/info_deaf_spb" target="_blank" style="color:black; background-color: white; padding: 20px; margin-top: 40px; display: inline-block; width: 100%">
+                                <h3 style="font-size: 1.2em; font-weight: 900; text-align: center; height: 46px; line-height: 46px">СПБ для глухих</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
