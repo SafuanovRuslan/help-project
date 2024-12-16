@@ -41,7 +41,7 @@
 
         <!-- Type -->
         <label for="type">Тип учетной записи</label>
-        <select name="type" class="block mt-1 w-full">
+        <select name="type" class="block mt-1 w-full" style="border: 1px solid #e5e7eb; border-radius: .375rem">
             <option value="1" @selected(old('type') == '')>
                 Педагог
             </option>
@@ -49,6 +49,13 @@
                 Родитель
             </option>
         </select>
+
+        <!-- Description -->
+        <div class="mt-4">
+            <x-input-label for="description" :value="__('Информация о себе')" />
+            <textarea id="description" type="textarea" name="description" class="block mt-1 w-full" style="border: 1px solid #e5e7eb; border-radius: .375rem"></textarea>
+            <x-input-error :messages="$errors->get('description')" class="mt-2" />
+        </div>
 
         <div class="flex items-center justify-end mt-4">
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">

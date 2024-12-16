@@ -20,7 +20,7 @@
                             <div style="background-color: white; border-radius: 20px; padding: 40px 20px; position: relative; margin-bottom: 20px">
                                 <h3 style="font-size: 1.2em; margin-bottom: 10px;"><?= $user->name ?></h3>
                                 <p style="margin-bottom: 10px;">Email: <i><?= $user->email ?></i></p>
-                                <p style="color: #777777">Специалист со стажем</p>
+                                <p style="color: #777777"><?= $user->description ?></p>
                             </div>
                         <?php endforeach; ?>
                     </div>

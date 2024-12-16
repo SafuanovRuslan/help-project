@@ -20,39 +20,45 @@ Route::get('/dashboard', function () {
 
 Route::get('/', function () {
     return view('home');
-})->middleware(['auth', 'verified'])->name('/');
+})->name('/');
 
 Route::get('/methodical', function () {
     return view('metodical');
-})->middleware(['auth', 'verified'])->name('methodical');
+})->name('methodical');
 
 Route::get('/obr', function () {
     return view('obr');
-})->middleware(['auth', 'verified'])->name('obr');
+})->name('obr');
 
 Route::get('/edu', function () {
     return view('edu');
-})->middleware(['auth', 'verified'])->name('edu');
+})->name('edu');
 
 Route::get('/specialists', function () {
     return view('specialists');
-})->middleware(['auth', 'verified'])->name('specialists');
+})->name('specialists');
 
 Route::get('/forum', function () {
     return view('forum');
-})->middleware(['auth', 'verified'])->name('forum');
+})->name('forum');
+
+Route::post('/forum', [\App\Http\Controllers\ForumController::class, 'createSubject']);
+
+Route::get('/forum/{id}', [\App\Http\Controllers\ForumController::class, 'comments']);
+
+Route::post('/comment', [\App\Http\Controllers\ForumController::class, 'createComment']);
 
 Route::get('/docs', function () {
     return view('docs');
-})->middleware(['auth', 'verified'])->name('docs');
+})->name('docs');
 
 Route::get('/news', function () {
     return view('news');
-})->middleware(['auth', 'verified'])->name('news');
+})->name('news');
 
 Route::get('/info', function () {
     return view('info');
-})->middleware(['auth', 'verified'])->name('info');
+})->name('info');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
